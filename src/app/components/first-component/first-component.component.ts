@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './first-component.component.css'
 })
 export class FirstComponentComponent implements OnInit {
+  name: string = 'Guilherme';
+  age: number = 17; 
+  job = 'Programador';
 
-  ngOnInit(): void {
+  constructor() {}
+
+  ngOnInit(): void {}
 
   }
 
-}
+
