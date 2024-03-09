@@ -1,3 +1,9 @@
-h2 {
-    color: red;
+.title {
+    background: black;
+    color: aliceblue; 
+    padding: 15px;
+}
+
+p {
+    padding:5px;
 }
