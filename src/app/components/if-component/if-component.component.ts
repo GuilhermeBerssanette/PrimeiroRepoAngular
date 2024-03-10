@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-if-component',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, NgTemplateOutlet],
   templateUrl: './if-component.component.html',
   styleUrl: './if-component.component.css'
 })
