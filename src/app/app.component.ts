@@ -7,12 +7,14 @@ import { IFComponentComponent } from "./components/if-component/if-component.com
 import { EventoComponentComponent } from "./components/evento-component/evento-component.component";
 import { EmitterComponentComponent } from "./components/emitter-component/emitter-component.component";
 import { ChangenumberComponentComponent } from "./components/changenumber-component/changenumber-component.component";
+import { ListrenderComponentComponent } from "./components/listrender-component/listrender-component.component";
+
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent, IFComponentComponent, EventoComponentComponent, EmitterComponentComponent, ChangenumberComponentComponent]
+    imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent, IFComponentComponent, EventoComponentComponent, EmitterComponentComponent, ChangenumberComponentComponent, ListrenderComponentComponent]
 })
 export class AppComponent {
   userName = 'Joaquim';
