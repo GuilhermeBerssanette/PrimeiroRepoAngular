@@ -17,7 +17,7 @@ export class EventoComponentComponent implements OnInit{
   ngOnInit(): void {}
 
   showMessage(): void {
-    this.show = !this.show; //toogle
+    this.show = !this.show; //toggle
   }
 
 }

@@ -5,12 +5,14 @@ import { ParentComponentComponent } from "./components/parentdata-component/pare
 import { DirectivesComponentComponent } from "./components/directives-component/directives-component.component";
 import { IFComponentComponent } from "./components/if-component/if-component.component";
 import { EventoComponentComponent } from "./components/evento-component/evento-component.component";
+import { EmitterComponentComponent } from "./components/emitter-component/emitter-component.component";
+import { ChangenumberComponentComponent } from "./components/changenumber-component/changenumber-component.component";
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent, IFComponentComponent, EventoComponentComponent]
+    imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent, IFComponentComponent, EventoComponentComponent, EmitterComponentComponent, ChangenumberComponentComponent]
 })
 export class AppComponent {
   userName = 'Joaquim';
