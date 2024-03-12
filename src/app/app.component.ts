@@ -8,13 +8,16 @@ import { EventoComponentComponent } from "./components/evento-component/evento-c
 import { EmitterComponentComponent } from "./components/emitter-component/emitter-component.component";
 import { ChangenumberComponentComponent } from "./components/changenumber-component/changenumber-component.component";
 import { ListrenderComponentComponent } from "./components/listrender-component/listrender-component.component";
+import { PipesComponentComponent } from "./components/pipes-component/pipes-component.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent, IFComponentComponent, EventoComponentComponent, EmitterComponentComponent, ChangenumberComponentComponent, ListrenderComponentComponent]
+    imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent,
+       IFComponentComponent, EventoComponentComponent, EmitterComponentComponent, ChangenumberComponentComponent,
+        ListrenderComponentComponent, PipesComponentComponent]
 })
 export class AppComponent {
   userName = 'Joaquim';
