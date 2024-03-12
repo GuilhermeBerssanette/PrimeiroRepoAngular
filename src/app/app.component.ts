@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FirstComponentComponent } from "./components/first-component/first-component.component";
 import { ParentComponentComponent } from "./components/parentdata-component/parent-component.component";
@@ -9,6 +9,9 @@ import { EmitterComponentComponent } from "./components/emitter-component/emitte
 import { ChangenumberComponentComponent } from "./components/changenumber-component/changenumber-component.component";
 import { ListrenderComponentComponent } from "./components/listrender-component/listrender-component.component";
 import { PipesComponentComponent } from "./components/pipes-component/pipes-component.component";
+import { TwowaybidingComponentComponent } from "./components/twowaybiding-component/twowaybiding-component.component";
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
     selector: 'app-root',
@@ -17,7 +20,7 @@ import { PipesComponentComponent } from "./components/pipes-component/pipes-comp
     styleUrl: './app.component.css',
     imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent,
        IFComponentComponent, EventoComponentComponent, EmitterComponentComponent, ChangenumberComponentComponent,
-        ListrenderComponentComponent, PipesComponentComponent]
+        ListrenderComponentComponent, PipesComponentComponent, TwowaybidingComponentComponent, FormsModule]
 })
 export class AppComponent {
   userName = 'Joaquim';
