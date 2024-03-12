@@ -11,6 +11,9 @@ import { ListrenderComponentComponent } from "./components/listrender-component/
 import { PipesComponentComponent } from "./components/pipes-component/pipes-component.component";
 import { TwowaybidingComponentComponent } from "./components/twowaybiding-component/twowaybiding-component.component";
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { ApplicationModule } from '@angular/core';
+
 
 
 @Component({
@@ -20,8 +23,14 @@ import { FormsModule } from '@angular/forms';
     styleUrl: './app.component.css',
     imports: [RouterOutlet, FirstComponentComponent, ParentComponentComponent, DirectivesComponentComponent,
        IFComponentComponent, EventoComponentComponent, EmitterComponentComponent, ChangenumberComponentComponent,
-        ListrenderComponentComponent, PipesComponentComponent, TwowaybidingComponentComponent, FormsModule]
+        ListrenderComponentComponent, PipesComponentComponent, TwowaybidingComponentComponent, FormsModule, 
+      AppRoutingModule, ApplicationModule],
+    
 })
+
+
+
+
 export class AppComponent {
   userName = 'Joaquim';
 
