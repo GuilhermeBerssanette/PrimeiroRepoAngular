@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FirstComponentComponent } from "./components/first-component/first-component.component";
-import { ListrenderComponentComponent } from "./components/listrender-component/listrender-component.component";
+import { FirstComponentComponent } from './components/first-component/first-component.component';
+import { ListrenderComponentComponent } from './components/listrender-component/listrender-component.component';
 
 const routes: Routes = [
   { path: '', component: FirstComponentComponent },
@@ -13,5 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-
 export class AppRoutingModule {}
